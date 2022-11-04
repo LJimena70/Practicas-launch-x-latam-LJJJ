@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=devicewidth, initial-scale=1.0">
+        <title>EL GATO TACO</title>
+        <style>
+            /*Cascade style sheet*/
+            *{
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+            }
+            body{
+                background-color: #FFFFFF;
+                margin: 2em;
+            }
+
+            p{
+                color: #9A031E;
+            }
+
+            h1{
+                color: #9A031E;
+                text-align: center;
+                font-size:xx-large
+            }
+            h2{
+                color: #9A031E;
+                text-align: center;
+                font-size:xx-large
+
+                }
+        </style>
+    </head>
+    <body>
+        <h1>Los mejores tacos de México</h1>
+       <h2>Visítanos o realiza tu pedido</h2> 
+
+       <img id= "GATOTACO" src="./EL_TACO_GATO sin fondo.png" alt="Logo EL GATO TACO">
+
+       <h3>Menú</h3>
+       <img src="./MENÚ.png" alt="Menú" width="100" height="100" >
+        <ul>
+            <li> Tacos campechamiau ...... 25$</li>
+            <li> Tacos de michisteck ...... 20$</li>
+            <li> Tacos de gatipastor ...... 25$ </li>
+       </ul>
+      
+       <dl>
+        <p>Especiales<p>
+        <dt> Tacos "guiskas"</dt>
+            <dd>Carne de soya, chicharrón y especias ...... 30$</dd>
+        <dt>Tacos de arenero </dt>
+            <dd>Milanesa empanizada con queso ...... 30$</dd>
+        <dt>Tacos de garrita</dt>
+            <dd>Pulpo y camarones rebozados ...... 35$</dd>
+    </dl>
+       <table>
+        <tr>
+            <th> Nombre</th>
+            <th>Ubicación</th>
+            <th>Horarios</th>
+        </tr>
+        <tr>
+            <td>Sucursal Tlalpan</td>
+            <td> <a href="https://goo.gl/maps/BgeApAAS23UQifU38" target="_blank"></a> Calz. de Tlalpan, José María Morelos 4650 Esquina, Niño Jesús, 14080 Ciudad de México, CDMX</td>
+            <td> Lunes a Domingo a partir de las 13:00 hrs hasta las 22:00 hrs</td>
+        </tr>
+        <tr>
+            <td>Sucursal Azcapotzalco</td>
+            <td> <a href="https://goo.gl/maps/mX3u1vbmfQgcoTSG8" target="_blank"></a> C. San Mateo 32, San Mateo, Azcapotzalco, 02490 Ciudad de México, CDMX</td>
+            <td> Lunes a Domingo a partir de las 13:00 hrs hasta las 22:00 hrs</td>
+        </tr>
+       </table>
+       <hr>
+       <h2>Pedidos</h2>
+       <p>Sucursal</p>
+       <form action="">
+       <select>
+        <option value="Sucursal Tlalpan"> Sucursal Tlalpan </option>
+        <option value="Sucursal Azcapotzalco"> Sucursal Azcapotzalco </option>
+        </select>
+        <br>
+        <p>Tacos a seleccionar</p>
+        <br>
+        <input type="checkbox" id="Tacos campechamiau" name="Tacos campechamiau" value="Tacos campechamiau">
+        <label for="Tacos campechamiau">Tacos campechamiau</label> 
+        <input type="number" placeholder="Cantidad" id="Tacos campechamiau Number" name="Tacos campechamiau Number">
+        <br>
+        <input type="checkbox" id="Tacos de michisteck" name="Tacos de michisteck" value="Tacos de michisteck">
+        <label for="Tacos de michisteck">Tacos de michisteck</label> 
+        <input type="number" placeholder="Cantidad" id="Tacos de michisteck Number" name="Tacos de michisteck Number">
+        <br>
+        <input type="checkbox" id="Tacos de gatipastor" name="Tacos de gatipastor" value="Tacos de gatipastor">
+        <label for="Tacos de gatipastor">Tacos de gatipastor</label> 
+        <input type="number" placeholder="Cantidad" id="Tacos de gatipastor Number" name="Tacos de gatipastor Number">
+        <br>
+        <input type="checkbox" id="Tacos guiskas" name="Tacos guiskas" value="Tacos guiskas">
+        <label for="Tacos guiskas">Tacos guiskas</label> 
+        <input type="number" placeholder="Cantidad" id="Tacos guiskas" name="Tacos guiskas">
+        <br>
+        <input type="checkbox" id="Tacos de arenero" name="Tacos de arenero" value="Tacos de arenero">
+        <label for="Tacos de arenero">Tacos de arenero</label> 
+        <input type="number" placeholder="Cantidad" id="Tacos de arenero" name="Tacos de arenero">
+        <br>
+        <input type="checkbox" id="Tacos de garrita" name="Tacos de garrita" value="Tacos de garrita">
+        <label for="Tacos de garrita">Tacos de garrita</label> 
+        <input type="number" placeholder="Cantidad" id="Tacos de garrita" name="Tacos de garrita">
+        <br>
+        <label for="Nombre">Nombre:</label> <br>
+       <input type="text" id="Nombre" name="Nombre" placeholder="Nombre para pedido">
+       <br>
+      <label for="Dirección">Dirección:</label><br>
+      <input type="text" id="Dirección" name="Dirección" placeholder="Indica tu dirección para el pedido">
+      <br>
+      <label for="Teléfono para contacto">Teléfono para contacto:</label> <br>
+      <input type="number" id="Teléfono para contacto" name="Teléfono para contacto" placeholder="Teléfono para contacto">
+      <br>
+      <button type="submit">Confirmar pedido</button>
+    </form>
+    </body>
+</html>
